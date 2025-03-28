@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chỉnh sửa phí giao dịch</title>
+</head>
+<body>
+    <h2>Thay đổi phí giao dịch của MyToken</h2>
+    <label for="feeInput">Nhập phí mới (tính theo phần nghìn, tối đa 100):</label>
+    <input type="number" id="feeInput" min="0" max="100" step="1">
+    <button onclick="updateFee()">Cập nhật phí</button>
+
+    <p id="status"></p>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/4.0.2/web3.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
